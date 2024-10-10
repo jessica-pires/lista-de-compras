@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F4F5FB;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Centraliza o conteúdo principal */
+main {
+    max-width: 600px; /* Largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 2rem auto;
+    width: 150px; 
+}
+
+/* Container do botão e do título */
+.primary-content {
+    padding: 2rem 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Estilo do botão voltar */
+.primary-content button {
+    border: none;
+    background: transparent;
+    color:#CA3884;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Input e botão adicionar */
+.input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    background-color:#CA3884 ;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Lista de itens */
+ul {
+    list-style: none; /* Remove as bolinhas */
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.item-removido{
+    display: flex;
+    justify-content: space-between;
+    background: #C93847;
+    align-items: center;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    
+
+} 
+.item-removido span {
+    margin-right:10px ;
+}
+.item-removido button{
+    text-align: left;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+
+}
+
+ul li label {
+    flex: 1;
+    margin-left: 10px;
+    text-align: left;
+    font-weight: 500;
+}
+
+ul li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+ul li .btn-delete {
+    background: none;
+    border: none;
+    color: #D1D5DB;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-delete:hover{
+    color: #B9C2D0;
+}
+
+@media (max-width: 768px){
+    main{
+        padding: 20px;
+    }
+    
+    .input-group{
+        flex-direction: column;
+        gap: 5px;
+    } 
+
+    .input-group input,
+    .input-group button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    ul li {
+        padding: 8px;
+    }
+
+    .item-removido {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+
+}
+
+@media(max-width:480px){
+    main {
+        padding: 20px;
+    }
+
+    .input-group input,
+    .input-group button {
+        padding: 14px;
+    }
+
+    ul li {
+        padding: 6px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .item-removido {
+        font-size: 12px;
+    }
+}

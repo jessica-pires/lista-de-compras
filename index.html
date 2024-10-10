@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Compras da Semana </title>
+</head>
+<body>
+    <main>
+        <img src="img/logo.png" alt="logo do projeto" class="logo">
+        <div class="primary-content">
+            <button><i class='bx bx-arrow-back'></i> Voltar</button>
+            <h2>Compras da semana</h2>
+        </div>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Adicione um novo item">
+                <button type="submit">Adicionar item</button>
+            </div>
+            <ul>
+                <li>
+                    <input type="checkbox" id="pao-forma" name="items" value="">
+                    <label for="pao-forma">Pão de Forma</label>
+                    <button type="button" class="btn-delete"><i class='bx bx-trash'></i></button>
+                </li>
+                <li>
+                    <input type="checkbox" id="cafe-preto" name="items" value="">
+                    <label for="cafe-preto">Café Preto</label>
+                    <button type="button" class="btn-delete"><i class='bx bx-trash'></i></button>
+                </li>
+                <li>
+                    <input type="checkbox" id="suco-laranja" name="items" value="">
+                    <label for="suco-laranja">Suco de Laranja</label>
+                    <button type="button" class="btn-delete"><i class='bx bx-trash'></i></button>
+                </li>
+                <li>
+                    <input type="checkbox" id="bolacha" name="items" value="">
+                    <label for="bolacha">Bolacha</label>
+                    <button type="button" class="btn-delete"><i class='bx bx-trash'></i></button>
+                </li>
+            </ul>
+                <div class="item-removido">
+                    <p><span><i class='bx bxs-error-circle' ></i></span>O item foi removido da lista</p>
+                    <button><i class='bx bx-x'></i></button>
+                </div>
+        </form>
+    </main>
+</body>
+</html>
